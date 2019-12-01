@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+
+    .content {
+      border: 1px solid black;
+      height: 100%;
+      font-size: 0px;
+
+
+    }
+
+    .content>* {
+      font-size: initial;
+      display: inline-block;
+
+
+
+    }
+
+    .block1 {
+      width: 100%;
+      height: 100px;
+      background-color: red;
+    }
+
+    .block2 {
+      width: 100px;
+      height: calc(100% - 100px);
+      background-color: black;
+      vertical-align: top;
+    }
+
+    .block3 {
+
+      width: calc(100% - 100px);
+      height: calc(100% - 100px);
+      background-color: yellow;
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+
+    <div class="block1">zhehsiyigebujuyemian</div>
+    <div class="block2"></div>
+    <div class="block3">diergebujukuai</div>
+
+  </div>
+</body>
+
+</html>

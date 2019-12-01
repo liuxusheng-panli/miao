@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    section {
+      font-size: 0;
+      width: 100%;
+
+      display: inline-block;
+      height: 100%;
+    }
+
+    section div {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+
+
+    .left {
+      display: inline-block;
+      width: 20%;
+      height: 100%;
+      vertical-align: top;
+      background-color: black;
+    }
+
+    .main {
+      display: inline-block;
+      height: 100%;
+      width: 40%;
+      background-color: purple;
+      border-right: 3px solid;
+    }
+
+    .main .top {
+      display: inline-block;
+      width: 100%;
+      height: 20%;
+      background-color: red;
+      border-bottom: 3px solid red;
+    }
+
+    .main .bottom {
+      width: 100%;
+      height: 80%;
+    }
+
+    .middle {
+      width: 20%;
+      height: 100%;
+      background-color: green;
+    }
+
+    .right {
+      width: 20%;
+      height: 100%;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="left"></div>
+    <div class="main">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+
+    <div class="middle"></div>
+    <div class="right"></div>
+  </section>
+</body>
+
+</html>
