@@ -30,7 +30,7 @@ var liuxusheng_panli = {
     }
     return temp
   },
-  difference: (array, ...args) {
+  difference: function (array, ...args) {
     let map = {};
     let ans = [];
     for (let i = 0; i < array.length; i++) {
@@ -48,7 +48,6 @@ var liuxusheng_panli = {
     }
     return ans;
   },
-
 }
 
 
