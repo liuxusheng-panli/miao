@@ -79,9 +79,11 @@ var liuxusheng_panli = {
     if (array.length == 0) {
       return undefined
     }
+    var newarray = []
     if (array.length !== 0) {
-      return newarray.push(array[0])
+      newarray.push(array[0])
     }
+    return newarray[0]
   },
 }
 
