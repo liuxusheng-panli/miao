@@ -66,9 +66,8 @@ var liuxusheng_panli = {
   },
 
   fill: function (array, value, start = 0, end = array.length) {
-
     for (var i = start; i < end; i++) {
-      array[i] == value
+      array[i] = value
     }
     return array
   },
