@@ -21,6 +21,15 @@ var liuxusheng_panli = {
     arr3.push(arr)
     return arr3
   },
+  compact: function (arr) {
+    var temp = []
+    for (i = 0; i < arr.length; i++) {
+      if (arr[i] == true) {
+        temp.push(arr[i])
+      }
+    }
+    return temp
+  },
 }
 
 
