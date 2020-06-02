@@ -24,7 +24,7 @@ var liuxusheng_panli = {
   compact: function (arr) {
     var temp = []
     for (i = 0; i < arr.length; i++) {
-      if (arr[i] == true) {
+      if (arr[i]) {
         temp.push(arr[i])
       }
     }
