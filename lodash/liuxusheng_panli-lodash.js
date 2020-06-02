@@ -50,14 +50,14 @@ var liuxusheng_panli = {
   },
 
   drop: function (Array, n = 1) {
-    if (number == 0) {
+    if (n == 0) {
       return Array
     }
-    if (number >= Array.length) {
+    if (n >= Array.length) {
       return []
     }
-    if (number < Array.length) {
-      for (i = 0; i < number; i++) {
+    if (n < Array.length) {
+      for (i = 0; i < n; i++) {
         Array.shift(i)
       }
       return Array
