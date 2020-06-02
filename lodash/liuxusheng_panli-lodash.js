@@ -48,6 +48,21 @@ var liuxusheng_panli = {
     }
     return ans;
   },
+
+  drop: function (Array, number) {
+    if (number == 0) {
+      return Array
+    }
+    if (number >= Array.length) {
+      return []
+    }
+    if (number < Array.length) {
+      for (i = 0; i < number; i++) {
+        Array.shift(i)
+      }
+      return Array
+    }
+  },
 }
 
 
