@@ -8,4 +8,19 @@ var liuxusheng_panli = {
       return false;
     }
   },
+  chunk: function (arr, size) {
+    var arr2 = []
+    for (i = 0; i < size; i++) {
+      arr2.push(arr[i])
+    }
+    for (i = 0; i < size; i++) {
+      arr.shift(arr[i])
+    }
+    var arr3 = []
+    arr3.push(arr2)
+    arr3.push(arr)
+    return arr3
+  },
 }
+
+
