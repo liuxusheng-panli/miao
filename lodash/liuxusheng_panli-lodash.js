@@ -56,6 +56,7 @@ var liuxusheng_panli = {
     if (n >= Array.length) {
       return []
     }
+
     if (n < Array.length) {
       for (i = 0; i < n; i++) {
         Array.shift(i)
