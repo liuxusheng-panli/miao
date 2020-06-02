@@ -49,16 +49,12 @@ var liuxusheng_panli = {
     return ans;
   },
 
-  drop: function (Array, number) {
+  drop: function (Array, n = 1) {
     if (number == 0) {
       return Array
     }
     if (number >= Array.length) {
       return []
-    }
-    if (number == 1) {
-      Array.shift(1)
-      return Array
     }
     if (number < Array.length) {
       for (i = 0; i < number; i++) {
