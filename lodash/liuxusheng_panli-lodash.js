@@ -74,7 +74,7 @@ var liuxusheng_panli = {
   flatten: function (ary) {
     return ary.flat()
     //flat()方法会按照一个可指定的深度递归遍历数组,默认深度为1，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。
-  }
+  },
   head: function (array) {
     if (array.length == 0) {
       return undefined
