@@ -105,7 +105,7 @@ var liuxusheng_panli = {
   initial: function (ary) {
     ary.pop()
     return ary
-  }
+  },
 }
 
 
