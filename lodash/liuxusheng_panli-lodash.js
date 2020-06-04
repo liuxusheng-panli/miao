@@ -87,13 +87,20 @@ var liuxusheng_panli = {
   },
 
   indexOf: function (array, num, target = 0) {
-    for (var i = target; i < array.length; i++) {
-      if (array[i] === num) {
-        return i
-      } else {
-        return -1
+    if (isNaN(value)) {
+      for (var i = target; i < array.length; i++) {
+        if (isNaN(array[i])) {
+          return i
+        }
+      }
+    } else {
+      for (var i = target; i < array.length; i++) {
+        if (array[i] === num) {
+          return i
+        }
       }
     }
+    return -1
   },
 }
 
