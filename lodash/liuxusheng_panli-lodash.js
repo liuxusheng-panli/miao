@@ -87,7 +87,7 @@ var liuxusheng_panli = {
   },
 
   indexOf: function (array, num, target = 0) {
-    if (isNaN(value)) {
+    if (isNaN(num)) {
       for (var i = target; i < array.length; i++) {
         if (isNaN(array[i])) {
           return i
