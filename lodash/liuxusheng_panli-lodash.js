@@ -85,6 +85,16 @@ var liuxusheng_panli = {
     }
     return newarray[0]
   },
+
+  indexOf: function (array, num, target = 0) {
+
+    for (var i = target; i < array.length; i++) {
+      if (array[i] == num)
+    } else {
+    return -1
+  }
+    return i
+},
 }
 
 
