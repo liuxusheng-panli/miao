@@ -106,6 +106,22 @@ var liuxusheng_panli = {
     ary.pop()
     return ary
   },
+  intersection: function (...array) {
+    var con = Arrayisfrom(arguments)
+    var ary = []
+    for (var i = 0; i < con.length; i++) {
+      ary.concat(con[i])
+    }
+  },
+
+  join: function (array, sparator = ',') {
+    return array.join(sparator)
+  }
+
+  last: function (array) {
+    return array.slice(array.length)
+  }
+
 }
 
 
