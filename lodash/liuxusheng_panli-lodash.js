@@ -116,11 +116,11 @@ var liuxusheng_panli = {
 
   join: function (array, sparator = ',') {
     return array.join(sparator)
-  }
+  },
 
   last: function (array) {
     return array.slice(array.length)
-  }
+  },
 
 }
 
