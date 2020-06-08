@@ -119,12 +119,20 @@ var liuxusheng_panli = {
   },
 
   last: function (array) {
-    array.slice(array.length - 1)
-    return array[0]
+    var newary = array.slice(array.length - 1)
+    return newary[0]
   },
-  lastIndexOf: function (array) {
-
+  lastIndexOf: function (array, value, fromIndex = array.length - 1) {
+    for (let i = fromIndex; i >= 0; i--) {
+  if (array[i] == value) {
+    return i
+  } else if (array[i] !== array[i] && value !== value) {
+    return i
   }
+}
+return -1
+  },
+
 
 }
 
