@@ -119,8 +119,12 @@ var liuxusheng_panli = {
   },
 
   last: function (array) {
-    return array.slice(array.length - 1)
+    array.slice(array.length - 1)
+    return array[0]
   },
+  lastIndexOf: function (array) {
+
+  }
 
 }
 
