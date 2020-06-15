@@ -129,13 +129,13 @@ var liuxusheng_panli = {
   nth: function (ary, n = 0) {
     if (ary = 0) {
       return ary
-    } else {
-      if (n >= 0) {
-        return ary[i]
-      } else {
-        return ary[ary.length - Math.abs(n)]
-      }
     }
+    if (n >= 0) {
+      return ary[n]
+    } else {
+      return ary[ary.length - Math.abs(n)]
+    }
+
 
   },
 
