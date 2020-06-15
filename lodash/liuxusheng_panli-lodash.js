@@ -106,31 +106,38 @@ var liuxusheng_panli = {
     ary.pop()
     return ary
   },
-  intersection: function (...array) {
-    var con = Arrayisfrom(arguments)
-    var ary = []
-    for (var i = 0; i < con.length; i++) {
-      ary.concat(con[i])
+
+  intersection: function (ary) {
+    for (var i = 0; i < ary.length; i++) {
+      var
     }
   },
-
   join: function (array, sparator = ',') {
     return array.join(sparator)
   },
-
   last: function (array) {
-    var newary = array.slice(array.length - 1)
-    return newary[0]
+    let arr = array
+    return arr.pop()
   },
-  lastIndexOf: function (array, value, fromIndex = array.length - 1) {
-    for (let i = fromIndex; i >= 0; i--) {
-  if (array[i] == value) {
-    return i
-  } else if (array[i] !== array[i] && value !== value) {
-    return i
-  }
-}
-return -1
+  lastindexOf: function (array, value, fromIndex = array.length - 1) {
+    let arr = array.slice(0, fromIndex + 1)
+    for (let i = arr.length - 1; i >= 0; i--) {
+      if (arr[i] == value || arr[i] != arr[i] && value != value)
+        return i
+    }
+    return -1
+  },
+  nth: function (ary, n = 0) {
+    if (ary = 0) {
+      return ary
+    } else {
+      if (n >= 0) {
+        return ary[i]
+      } else {
+        return ary[ary.length - Math.abs(n)]
+      }
+    }
+
   },
 
 
