@@ -127,9 +127,6 @@ var liuxusheng_panli = {
     return -1
   },
   nth: function (ary, n = 0) {
-    if (ary = 0) {
-      return ary
-    }
     if (n >= 0) {
       return ary[n]
     } else {
