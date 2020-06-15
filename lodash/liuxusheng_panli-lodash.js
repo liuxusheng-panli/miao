@@ -108,10 +108,8 @@ var liuxusheng_panli = {
   },
 
   intersection: function (ary) {
-    for (var i = 0; i < ary.length; i++) {
-      var
-    }
   },
+
   join: function (array, sparator = ',') {
     return array.join(sparator)
   },
