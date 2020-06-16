@@ -146,6 +146,18 @@ var liuxusheng_panli = {
     }
     return ary
   },
+  pullAll: function (ary, array) {
+    var j = 0
+    while (j < array.length) {
+      for (i = 0; i < ary.length; i++) {
+        if (ary[i] == array[j]) {
+          ary.splice(i, 1)
+        }
+      }
+      j++
+    }
+    return ary
+  },
 
 
 }
