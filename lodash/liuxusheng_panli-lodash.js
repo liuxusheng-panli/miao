@@ -132,8 +132,19 @@ var liuxusheng_panli = {
     } else {
       return ary[ary.length - Math.abs(n)]
     }
+  },
 
-
+  pull: function (ary, ...values) {
+    var j = 0
+    while (j < values.length) {
+      for (i = 0; i < ary.length; i++) {
+        if (ary[i] == values[j]) {
+          ary.splice(i, 1)
+        }
+      }
+      j++
+    }
+    return ary
   },
 
 
