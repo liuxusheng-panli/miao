@@ -158,6 +158,63 @@ var liuxusheng_panli = {
     }
     return ary
   },
+  reverse: function (array) {
+    var result = []
+    for (var i = array.length - 1; i >= 0; i--) {
+      result.push(ary[i])
+    }
+    return result
+  },
+  sortedIndex: function (ary, value) {
+    var low = 0
+    var high = ary.length - 1
+    var mid
+    var element
+    if (value >= ary[high]) {
+      return ary.length
+    }
+    while (low <= high) {
+      var mid = Math.floor((low + high) / 2)
+      element = ary[mid]
+      if (element === value) {
+        return mid
+      } else if (value < element) {
+        high = mid - 1
+      } else {
+        low = mid + 1
+      }
+    }
+    return mid
+  },
+
+  tail: function (ary) {
+    ary.shift() //删除数组中第一个元素
+    return ary
+  },
+  take: function (ary, n = 1) {
+    if (n == 0) {
+      return []
+    }
+    if (n > ary.length) {
+      return ary
+    }
+    if (n > 0 && n <= ary.length) {
+      return ary.slice(0, n)
+    }
+  },
+  takeRight: function (ary, n = 1) {
+    if (n == 0) {
+      return []
+    }
+    if (n > ary.length) {
+      return ary
+    }
+    if (n > 0 && n <= ary.length) {
+      var ary1 = ary.reverse().slice(0, n)
+      var ary2 = ary1.reverse()
+    }
+  },
+
 
 
 }
