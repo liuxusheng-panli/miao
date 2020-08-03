@@ -212,6 +212,7 @@ var liuxusheng_panli = {
     if (n > 0 && n <= ary.length) {
       var ary1 = ary.reverse().slice(0, n)
       var ary2 = ary1.reverse()
+      return ary2
     }
   },
 
