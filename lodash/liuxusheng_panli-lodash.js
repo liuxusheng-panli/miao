@@ -31,22 +31,14 @@ var liuxusheng_panli = {
     return temp
   },
   difference: function (array, ...args) {
-    let map = {};
-    let ans = [];
-    for (let i = 0; i < array.length; i++) {
-      map[array[i]] = true;
-    }
-    for (let i in args) {
-      for (let j in args[i]) {
-        if (map[args[i][j]]) map[args[i][j]] = false;
+    var result = []
+    for (let i = 0; i < ary1.length; i++) {
+      let res = ary2.includes(ary1[i])
+      if (res) {
+        result.push(ar2[i])
       }
     }
-    for (let i in array) {
-      if (map[array[i]]) {
-        ans[ans.length] = array[i];
-      }
-    }
-    return ans;
+    return result
   },
 
   drop: function (Array, n = 1) {
@@ -231,16 +223,7 @@ var liuxusheng_panli = {
 }
 
 
-function def(ary1, ary2) {
-  var result = []
-  for (let i = 0; i < ary1.length; i++) {
-    let res = ary2.includes(ary1[i])
-    if (res) {
-      result.push(ar2[i])
-    }
-  }
-  return result
-}
+
 
 
 
