@@ -107,8 +107,18 @@ var liuxusheng_panli = {
     return ary
   },
 
-  intersection: function (ary) {
-
+  intersection: function (...ary) {
+    var arg = Array.from(arguments)
+    var result = []
+    for (var i = 0; i < arg.length; i++) {
+      for (var j = 1; j < arg[j].length; j++) {
+        var tre = arg[0].includes(arg[j][i])
+        if (tre) {
+          result.push(arg[j][i])
+        }
+      }
+    }
+    return result
   },
 
   join: function (array, sparator = ',') {
@@ -219,5 +229,20 @@ var liuxusheng_panli = {
 
 
 }
+
+
+function def(ary1, ary2) {
+  var result = []
+  for (let i = 0; i < ary1.length; i++) {
+    let res = ary2.includes(ary1[i])
+    if (res) {
+      result.push(ar2[i])
+    }
+  }
+  return result
+}
+
+
+
 
 
