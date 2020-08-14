@@ -30,15 +30,16 @@ var liuxusheng_panli = {
     }
     return temp
   },
-  difference: function (ary1, ary2) {
-    var result = []
-    for (let i = 0; i < ary1.length; i++) {
-      let res = ary2.includes(ary1[i])
-      if (res == false) {
-        result.push(ary1[i])
-      }
-    }
-    return result
+  difference: function (ary1, ...ary) {
+    var t = []
+    ary.forEach((val) => {
+      return t = t.concat(val)
+    });
+
+
+    return ary1.filter((val2) => {
+      t.includes(val2)
+    })
   },
 
   drop: function (Array, n = 1) {
