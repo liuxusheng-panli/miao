@@ -38,7 +38,7 @@ var liuxusheng_panli = {
 
 
     return ary1.filter((val2) => {
-      t.includes(val2)
+      return !(t.includes(val2))
     })
   },
 
@@ -219,7 +219,39 @@ var liuxusheng_panli = {
     }
   },
 
+  union: function (...ary) {
+    var s = []
+    ary.forEach((val) => {
+      return s = s.concat(val)
+    })
+    var t = []
 
+    for (var i = 0; i < s.length; i++) {
+      var item = s[i]
+      if (!t.includes(s[i])) {
+        t.push(item)
+      }
+    }
+
+    return t.sort((a, b) => {
+      return a - b
+    }).reverse()
+  },
+
+  uniq: function (array) {
+    var ary = []
+    for (var i = 0; i < s.length; i++) {
+      var item = array[i]
+      if (!t.includes(s[i])) {
+        ary.push(item)
+      }
+    }
+    return ary
+  },
+
+  unzip: function () {
+
+  },
 
 }
 
